@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Boda Alfredo y Lidia. 09/09/2023</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    .header {
+      /* background-image: url('banner_principal_pc.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 1000px;
+      box-sizing: border-box;
+      background-position-x: center; */
+      position: relative;
+    }
+    
+    .main-content {
+      padding: 0px;
+      border: 10px solid #4e6175;
+      color:#4e6175;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+    }
+
+    h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 60px;
+      color: #4e6175;
+    }
+
+    .countdown {
+      /* background-image: url('banner2.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      box-sizing: border-box;
+      background-position-x: center;
+      height: 1826px;
+      width: 1920px; */
+      position: relative;
+    }
+    
+    .button-header {
+      position: absolute;
+      border-color: #4e6175;
+      color: #4e6175;
+      text-decoration: none;
+      bottom: 14%;
+      right: 24%;
+      border: 3px solid #4e6175;
+    }
+
+    .countdown h2 {
+      color: #4e6175;
+      font-size: 50px;
+      font-weight: bold;
+      position: absolute;
+      right: 30%;
+      top: 5%;
+    }
+
+    #countdown-timer {
+      position: absolute;
+      right: 19%;
+      top: 15%;
+    }
+
+    #countdown-timer div {
+      display: inline-block;
+    }
+
+    .button-countdown {
+      padding: 15px;
+      position: absolute;
+      border-color: #4e6175;
+      background-color: #4e6175;
+      color: white;
+      text-decoration: none;
+      right: 36%;
+      top: 43%;
+    }
+
+    .circle {
+      margin: 10px;
+  display: inline-block;
+  width: 175px;
+  height: 175px;
+  line-height: 175px;
+  border-radius: 50%;
+  border-color: #7eaa91;
+  border-width: 5px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #4e6175;
+  border-style: solid;
+  text-align: center;
+}
+
+  .temporales {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <div class="container main-content">
+    <div class="row text-center">
+      <div class="col-md-12 header">
+        <img src="banner_principal_pc.jpg" alt="Photo" class="img-fluid">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2JEG4M1wPP6ST6BtgMnZF-hPUk-BucvP8E7kkKmNgO9Kpfw/viewform" class="button-header btn btn-lg rounded-pill bg-opacity-0">
+          Confirma tu asistencia
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mx-auto mt-4" style="text-align: center;">
+        <h2>Detalles</h2>
+        <p>
+          Querida familia y amigos, ya podéis preparar vuestros trajes de boda porque os esperamos el próximo 9 de septiembre a las <strong>12:30h en la FINCA TORRE DE REIXES (Sant Joan)</strong>
+        </p>
+        <p>
+          ¡IMPORTANTE! La recogida del bus será aproximadamente a las 11:45h en el centro de Benidorm y a las 12:00h en la Barbera de la Vila Joiosa.
+          La vuelta en bus será cuando terminemos en la finca, sobre las 00:00h. Aunque los horarios y lugares exactos se confirmarán más adelante.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.700419068064!2d-0.4417327226256198!3d38.379051271839415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6239c29d19b7b7%3A0x9386e18bb1520563!2sRestaurante%20Torre%20de%20Reixes!5e0!3m2!1ses!2ses!4v1687202908871!5m2!1ses!2ses" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+        <h2>¡Contamos con vosotros!</h2>
+      </div>
+      <div class="col-lg-6 col-12">
+        <img src="foto1.jpg" alt="Photo" class="img-fluid">
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-12 countdown mx-auto">
+        <img src="banner2.jpg" alt="Photo2" class="img-fluid">
+        <row>
+          <h2 style="width: 500px">¿Te lo vas a perder?</h2>
+        </row>
+        <row>
+          <div id="countdown-timer"></div>
+        </row>
+        <row>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2JEG4M1wPP6ST6BtgMnZF-hPUk-BucvP8E7kkKmNgO9Kpfw/viewform" class="button-countdown btn btn-lg rounded-pill bg-opacity-0">AHÍ ESTARÉ PARA DARLO TODO</a>
+        </row>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Countdown timer logic
+    function addLeadingZero(number) {
+      return number < 10 ? `0${number}` : number;
+    }
+    const weddingDate = new Date('September 9, 2023 12:30:00 GMT+0100');
+    function updateCountdown() {
+      const currentDate = new Date();
+      const timeDifference = weddingDate - currentDate;
+
+      // Calculate days, hours, minutes, and seconds
+      const days = addLeadingZero(Math.floor(timeDifference / (1000 * 60 * 60 * 24)));
+      const hours = addLeadingZero(Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      const minutes = addLeadingZero(Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60)));
+      const seconds = addLeadingZero(Math.floor((timeDifference % (1000 * 60)) / 1000));
+
+      // Display the countdown
+      const countdownElement = document.getElementById('countdown-timer');
+      countdownElement.innerHTML = `
+        <div><span class="circle">${days}</span><p class="temporales">DÍAS</p></div>
+        <div><span class="circle">${hours}</span><p class="temporales">HORAS</p></div>
+        <div><span class="circle">${minutes}</span><p class="temporales">MINUTOS</p></div>
+        <div><span class="circle">${seconds}</span><p class="temporales">SEGUNDOS</p></div>
+      `;
+
+      // Update the countdown every second
+      if (timeDifference > 0) {
+        setTimeout(updateCountdown, 1000);
+      }
+    }
+
+    updateCountdown();
+  </script>
+</body>
+</html>
