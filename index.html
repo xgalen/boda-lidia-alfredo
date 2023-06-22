@@ -8,14 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat&display=swap" rel="stylesheet">
   <style>
     .header {
-      /* background-image: url('banner_principal_pc.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
-      height: 1000px;
-      box-sizing: border-box;
-      background-position-x: center; */
       position: relative;
+    }
+    .container {
     }
     
     .main-content {
@@ -33,13 +28,6 @@
     }
 
     .countdown {
-      /* background-image: url('banner2.jpg');
-      background-repeat: no-repeat;
-      background-position: center;
-      box-sizing: border-box;
-      background-position-x: center;
-      height: 1826px;
-      width: 1920px; */
       position: relative;
     }
     
@@ -103,6 +91,44 @@
     font-size: 25px;
     font-weight: bold;
   }
+
+  @media (max-width: 576px) {
+    .circle {
+      margin: 8px;
+      display: inline-block;
+      width: 160px;
+      height: 160px;
+      line-height: 160px;
+      border-radius: 50%;
+      border-color: #7eaa91;
+      border-width: 5px;
+      font-size: 90px;
+      font-weight: bold;
+      color: #4e6175;
+      border-style: solid;
+      text-align: center;
+    }
+
+    .temporales {
+      font-size: 5px;
+      font-weight: bold;
+    }
+
+    .button-countdown {
+      top: 40%;
+      right: 30%;
+    }
+
+    .countdown h2 {
+      right: 23%;
+    }
+
+    #countdown-timer {
+      right: 12%;
+    }
+  }
+
+
   </style>
 </head>
 <body>
@@ -176,7 +202,7 @@
 
       // Update the countdown every second
       if (timeDifference > 0) {
-        setTimeout(updateCountdown, 1000);
+        //setTimeout(updateCountdown, 1000);
       }
     }
 
